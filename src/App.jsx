@@ -6,10 +6,10 @@ import Login from './pages/Login'
 import About from './pages/About'
 import Contects from './pages/Contects'
 import MyProfile from './pages/MyProfile'
-import MyApoimment from './pages/MyApoimment'
-import Apoimment from './pages/Apoimment'
+import MyApointment from './pages/MyApointment'
+import Apointment from "./pages/Apointment"
 import Navbar from './components/Navbar'
-
+import Footer from './components/Footer'
 const App = () => {
   return (
     <div className='mx-4 sm:mx-[10%]' >
@@ -22,9 +22,10 @@ const App = () => {
         <Route path='/about' element={<About />} />
         <Route path='/contect' element={<Contects />} />
         <Route path='/my-profile' element={<MyProfile />} />
-        <Route path='/my-apoimment' element={<MyApoimment />} />
-        <Route path='/apoimment/:docId' element={<Apoimment />} />
+        <Route path='/my-apoimment' element={<MyApointment />} />
+        <Route path='/apoimment/:docId' element={<Apointment />} />
       </Routes>
+      <Footer />
     </div>
   )
 }
