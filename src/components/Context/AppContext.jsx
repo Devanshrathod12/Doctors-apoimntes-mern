@@ -4,8 +4,9 @@ export const AppContext = createContext()
 
 const AppContextProvider = (props) => {
 
+    const currncySymbol = "₹" // hardcoded show all plases
     const value = {
-       doctors
+       doctors,currncySymbol
     }
 
     return (
