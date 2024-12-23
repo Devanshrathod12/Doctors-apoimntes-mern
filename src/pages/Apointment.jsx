@@ -120,7 +120,7 @@ const Apointment = () => {
         <div className='flex items-center gap-3 w-full overflow-x-scroll mt-4' >
           {docSlots.length && docSlots[slotIndex].map((item,index)=>(
             <p onClick={()=>setSlotTime(item.time)} className={`text-sm font-light flex-shrink-0 px-5 py-2 rounded-full cursor-pointer  ${item.time === slotTime ? 'bg-primary text-white': 'text-gray-400 border border-gray-300'} `} key={index}>
-              {item.time.toLowerCase()}; 
+              {item.time.toLowerCase()}
             </p>
           ))}
         </div>
